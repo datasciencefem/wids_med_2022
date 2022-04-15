@@ -270,7 +270,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(42, 6, 51, 0.8);
+  color: rgba(#053120);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -323,7 +323,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: rgb(120, 56, 126);
+  background: rgb(#053120);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -693,7 +693,7 @@ h6 {
 
 #hero .about-btn:hover {
   /*background: #f82249;*/
-  background-color: #550351;
+  background-color: #053120;
   /*color: rgb(252, 245, 245);*/
 }
 
@@ -741,7 +741,7 @@ h6 {
 
 #about:before {
   content: "";
-  background: #550351;
+  background: #053120;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -818,7 +818,7 @@ h6 {
 }
 
 #speakers .speaker .details a {
-  color: #550351;
+  color: #053120;
 }
 
 #speakers .speaker .details a:hover {
@@ -834,7 +834,7 @@ h6 {
 }
 
 #speakers-details .details h2 {
-  color: #550351;
+  color: #053120;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
