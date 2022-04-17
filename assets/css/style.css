@@ -10,12 +10,12 @@
 --------------------------------------------------------------*/
 body {
   background: #fff;
-  color: #00B140;
+  color: #034A41;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #00B140;
+  color: #F0A63B;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -23,11 +23,13 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #00B140;
+  color: #ffffff;
   outline: none;
   text-decoration: none;
 }
-
+.nav-link:focus, .nav-link:hover {
+  color: #053120;
+}
 p {
   padding: 0;
   margin: 0 0 30px 0;
@@ -54,7 +56,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #550351;
+  color: #034A41;
   ;
 }
 
@@ -88,7 +90,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #00b140;
+  background: #ff9800;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -102,7 +104,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #00B140;
+  background: #053120;
   color: #fff;
 }
 
@@ -125,7 +127,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #00B140;
+  background: #ff9800;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -144,7 +146,7 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #550351;
+  color: #03423B;
 }
 
 
@@ -211,25 +213,26 @@ h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
   color: rgb(253, 253, 253);
-  background: #00b140;
-  padding: 7px 22px;
-  margin: 0 0 0 15px;
+  background: #053120;
+  padding: 7px 34px;
+  margin: 0 0 0 25px;
   border-radius: 50px;
-  border: 2px solid #00b140;
+  border: 2px solid #053120;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
   font-size: 13px;
   white-space: nowrap;
+
 }
 
 .buy-tickets:hover {
   background: none;
-  color: #00B140;
+  color: #053120;
 }
 
 .buy-tickets:focus {
-  color: #00B140;
+  color: #ffffff;
 }
 
 @media (max-width: 992px) {
@@ -294,7 +297,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #460331;
+  background-color: #f0a63b;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -492,6 +495,13 @@ h6 {
   display: block;
 }
 
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #053120;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -501,7 +511,7 @@ h6 {
   line-height: 100%;
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: rgb(5 49 32);
 
 
 }
@@ -514,7 +524,7 @@ h6 {
   line-height: 100%;
   font-size: 50px;
   font-weight: 700;
-  color: white;
+  color: rgb(5 49 32);
 }
 
 #hero {
@@ -582,7 +592,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #00B140;
+  color: #034A41;
 }
 
 @media (max-width: 991px) {
@@ -603,7 +613,7 @@ h6 {
   }
 }
 
-#hero .play-btn {
+/* #hero .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#00B140 50%, rgba(98, 5, 134, 0.15) 52%);
@@ -611,7 +621,7 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
-}
+} */
 
 #hero .play-btn::after {
   content: '';
@@ -802,7 +812,7 @@ h6 {
 }
 
 #speakers .speaker .details p {
-  color: #550351;
+  color: #03423B;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
@@ -822,7 +832,7 @@ h6 {
 }
 
 #speakers .speaker .details a:hover {
-  color: #00B140;
+  color: #F0A63B;
 }
 
 #speakers .speaker:hover .details {
@@ -845,7 +855,7 @@ h6 {
 }
 
 #speakers-details .details .social a {
-  background: #00b140;
+  background: #053120;
   color: white;
   line-height: 1;
   display: inline-block;
@@ -859,7 +869,7 @@ h6 {
 }
 
 #speakers-details .details .social a:hover {
-  background: #460331;
+  background: #ff9800;
   color: #fff;
 }
 
@@ -869,7 +879,7 @@ h6 {
 }
 
 #speakers-details .details p {
-  color: #550351;
+  color: #053120;
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -907,7 +917,7 @@ h6 {
 }
 
 #embajadoras .speaker .details p {
-  color: #550351;
+  color: #03423B;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
@@ -923,11 +933,11 @@ h6 {
 }
 
 #embajadoras .speaker .details a {
-  color: #550351;
+  color: #053120;
 }
 
 #embajadoras .speaker .details a:hover {
-  color: #00B140;
+  color: #ffc107;
 }
 
 #embajadoras .speaker:hover .details {
@@ -1089,7 +1099,7 @@ h6 {
 
 #schedule .schedule-item h4 span {
   font-style: italic;
-  color: #00B140;
+  color: #ff9800;
   font-weight: normal;
   font-size: 16px;
   /* margin-left: 3%; */
@@ -1097,7 +1107,7 @@ h6 {
 
 #schedule .schedule-item p {
   font-style: italic;
-  color: #550351;
+  color: #053120;
   margin-bottom: 0;
 }
 
@@ -1563,7 +1573,7 @@ h6 {
 }
 
 #contact .contact-info a {
-  color: #4869df;
+  color:#721F54;
 }
 
 #contact .contact-info a:hover {
@@ -1704,7 +1714,7 @@ width: 100%;
 }
 
 #footer .footer-top {
-  background: #550351;
+  background: #053120;
   padding: 20px 0 30px 0;
 }
 
@@ -1745,7 +1755,7 @@ width: 100%;
 
 #footer .footer-top .social-links a {
   display: inline-block;
-  background: #550351;
+  background: #053120;
   color: #eee;
   line-height: 1;
   margin-right: 4px;
@@ -1764,7 +1774,7 @@ width: 100%;
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #00b140;
+  background: #ff9800;
   color: #fff;
 }
 

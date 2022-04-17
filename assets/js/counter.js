@@ -1,7 +1,7 @@
 //===
 // VARIABLES
 //===
-const DATE_TARGET = new Date('09/25/2021 8:00 AM');
+const DATE_TARGET = new Date('05/11/2022 08:00 AM');
 // DOM for render
 const SPAN_DAYS = document.querySelector('span#days');
 const SPAN_HOURS = document.querySelector('span#hours');
@@ -24,11 +24,20 @@ function updateCountdown() {
     // Calcs
     const NOW = new Date()
     const DURATION = DATE_TARGET - NOW;
-    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+    let REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+    let REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+    let REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+    let REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
     // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+
+
+    if (DURATION <= 0 ){
+        REMAINING_DAYS = 0;
+        REMAINING_HOURS = 0;
+        REMAINING_MINUTES = 0;
+        REMAINING_SECONDS = 0;
+    }
 
     // Render
     SPAN_DAYS.textContent = REMAINING_DAYS;
