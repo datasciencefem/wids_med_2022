@@ -530,7 +530,7 @@ h6 {
 #hero {
   width: 100%;
   height: auto;
-  background: url(../img/1.jpg) top center;
+  background: url(../img/2.1.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -553,11 +553,10 @@ h6 {
 }
 
 #hero .hero-container {
-  padding-top: 140px;
-  padding-bottom: 20px;
+  padding-top: 200px;
+  padding-bottom: 120px;
   bottom: 0;
   left: 0;
-  /* top: 0; */
   right: 0;
   display: flex;
   justify-content: center;
