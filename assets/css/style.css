@@ -511,7 +511,7 @@ h6 {
   line-height: 100%;
   font-size: 24px;
   font-weight: bold;
-  color: rgb(5 49 32);
+  color: rgb(255, 255, 255);
 
 
 }
@@ -524,12 +524,13 @@ h6 {
   line-height: 100%;
   font-size: 50px;
   font-weight: 700;
-  color: rgb(5 49 32);
+  color: rgb(255, 255, 255);
 }
 
 #hero {
   width: 100%;
-  background: url(../img/hero-bg.jpg) top center;
+  height: auto;
+  background: url(../img/1.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -592,7 +593,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #034A41;
+  color: #F0A63B;
 }
 
 @media (max-width: 991px) {
@@ -662,7 +663,7 @@ h6 {
 }
 
 #hero .play-btn:hover::after {
-  border-left: 15px solid #550351;
+  border-left: 15px solid #034A41;
   transform: scale(20);
 }
 
