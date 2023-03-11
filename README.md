@@ -1,2 +1,2 @@
 # wids_med_2022
-wids page
+wids web page
